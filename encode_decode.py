@@ -6,7 +6,7 @@ def encode(password):
 
     for i in password:
         value = int(i)
-        new_value = value + 3
+        new_value = (value + 3) % 10
         string_value = str(new_value)
         encoded += string_value
 
