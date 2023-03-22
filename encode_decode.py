@@ -13,6 +13,13 @@ def encode(password):
     return encoded
 
 
+def decode(encoded):
+    decoded_string = ''
+    for digit in encoded:
+        decoded_string += str((int(digit) - 3) % 10)
+    return decoded_string
+# decode function added by Natalia
+
 if __name__ == '__main__':
 
     while True:
